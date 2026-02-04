@@ -15,7 +15,7 @@ namespace webapi1.Controllers
             _context = context; //asignar el contexto
         }
 
-        [HttpGet("listar")] // api/usuarios/listar
+        [HttpGet("listarusers")] // api/usuarios/listar
         public async Task<ActionResult<IEnumerable<usuario>>> ListarUsuario() //metodo para listar usuarios
         {
             var usuarios = await _context.usuarios.ToListAsync(); //consultar la lista de usuarios en la base de datos
